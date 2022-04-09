@@ -17,7 +17,7 @@ start fivem-discordlogs
 - Set your Discord webhook URL in `server.lua`
 
 ### Features
-- Ability to log what ever you want (both server & client)
+- Ability to log what ever you want
 - Ability to log hidden stuff for admins or devs
 - Easy to add more logging then the 2 provided
 
