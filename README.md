@@ -1,6 +1,7 @@
 # fivem-discordlogs
 Resource created by [Jay, The Creator](http://github.com/NotJayTheCreator)
 
+![Logs](https://i.imgur.com/xp01YjM.png)
 ### Download
 - Download the zip file
 - Put it in any directory
