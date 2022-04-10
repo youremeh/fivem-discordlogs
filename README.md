@@ -19,7 +19,7 @@ start fivem-discordlogs
 ### Features
 - Ability to log what ever you want
 - Ability to log hidden stuff for admins or devs
-- Easy to add more logging then the 2 provided
+- Easy to add more logging events
 
 ### Information
 I will not provide any kind of support for this addon. If someone makes a pull request to fix something, I may merge it.
