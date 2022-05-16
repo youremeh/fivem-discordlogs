@@ -24,9 +24,9 @@ AddEventHandler('bot:SendToDiscord', function(Name, Message, Source)
     PerformHttpRequest(WebHook, function(Error, Content, Head) end, 'POST', json.encode({username = Name, content = '```\n'..Message..'```'}), {['Content-Type'] = 'application/json'})
 end)
 
---	TriggerEvent('bot:SendToDiscordLeaders', 'TITLE', 'MESSAGE')
-RegisterServerEvent('bot:SendToDiscordLeaders')
-AddEventHandler('bot:SendToDiscordLeaders', function(Name, Message, Source)
+--	TriggerEvent('bot:SendToDiscordStaff', 'TITLE', 'MESSAGE')
+RegisterServerEvent('bot:SendToDiscordStaff')
+AddEventHandler('bot:SendToDiscordStaff', function(Name, Message, Source)
     if Message == nil or Message == '' then return nil end
     WebHook = 'DISCORD WEBHOOK HERE'
     PerformHttpRequest(WebHook, function(Error, Content, Head) end, 'POST', json.encode({username = Name, content = '```\n'..Message..'```'}), {['Content-Type'] = 'application/json'})
