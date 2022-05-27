@@ -1,4 +1,4 @@
-AddEventHandler('playerConnecting', function(Reason)
+AddEventHandler('playerConnecting', function()
     local name = GetPlayerName(source)
     local id = GetPlayerIdentifier(source)
     if name and id then TriggerEvent('bot:SendToDiscord', 'Player Connecting', name..' ('..id..') is connecting to the server') end
@@ -18,16 +18,16 @@ end)
 
 --  TriggerEvent('bot:SendToDiscord', 'TITLE', 'MESSAGE')
 RegisterServerEvent('bot:SendToDiscord')
-AddEventHandler('bot:SendToDiscord', function(Name, Message, Source)
+AddEventHandler('bot:SendToDiscord', function(Name, Message)
     if Message == nil or Message == '' then return nil end
     WebHook = 'DISCORD WEBHOOK HERE'
-    PerformHttpRequest(WebHook, function(Error, Content, Head) end, 'POST', json.encode({username = Name, content = '```\n'..Message..'```'}), {['Content-Type'] = 'application/json'})
+    PerformHttpRequest(WebHook, function(Content) end, 'POST', json.encode({username = Name, content = '```\n'..Message..'```'}), {['Content-Type'] = 'application/json'})
 end)
 
 --	TriggerEvent('bot:SendToDiscordStaff', 'TITLE', 'MESSAGE')
 RegisterServerEvent('bot:SendToDiscordStaff')
-AddEventHandler('bot:SendToDiscordStaff', function(Name, Message, Source)
+AddEventHandler('bot:SendToDiscordStaff', function(Name, Message)
     if Message == nil or Message == '' then return nil end
     WebHook = 'DISCORD WEBHOOK HERE'
-    PerformHttpRequest(WebHook, function(Error, Content, Head) end, 'POST', json.encode({username = Name, content = '```\n'..Message..'```'}), {['Content-Type'] = 'application/json'})
+    PerformHttpRequest(WebHook, function(Content) end, 'POST', json.encode({username = Name, content = '```\n'..Message..'```'}), {['Content-Type'] = 'application/json'})
 end)
