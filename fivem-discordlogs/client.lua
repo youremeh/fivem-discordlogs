@@ -62,7 +62,7 @@ end)
 function IsMelee(Weapon)
     local Weapons = {'WEAPON_UNARMED', 'WEAPON_CROWBAR', 'WEAPON_BAT', 'WEAPON_GOLFCLUB', 'WEAPON_HAMMER', 'WEAPON_NIGHTSTICK'}
     for CurrentWeapon in ipairs(Weapons) do
-        if GetHashKey(CurrentWeapon) == Weapon then return true end
+        if joaat(CurrentWeapon) == Weapon then return true end
     end
     return false
 end
@@ -70,7 +70,7 @@ end
 function IsTorch(Weapon)
     local Weapons = {'WEAPON_MOLOTOV'}
     for CurrentWeapon in ipairs(Weapons) do
-        if GetHashKey(CurrentWeapon) == Weapon then return true end
+        if joaat(CurrentWeapon) == Weapon then return true end
     end
     return false
 end
@@ -78,7 +78,7 @@ end
 function IsKnife(Weapon)
     local Weapons = {'WEAPON_DAGGER', 'WEAPON_KNIFE', 'WEAPON_SWITCHBLADE', 'WEAPON_HATCHET', 'WEAPON_BOTTLE'}
     for CurrentWeapon in ipairs(Weapons) do
-        if GetHashKey(CurrentWeapon) == Weapon then return true end
+        if joaat(CurrentWeapon) == Weapon then return true end
     end
     return false
 end
@@ -86,7 +86,7 @@ end
 function IsPistol(Weapon)
     local Weapons = {'WEAPON_SNSPISTOL', 'WEAPON_HEAVYPISTOL', 'WEAPON_VINTAGEPISTOL', 'WEAPON_PISTOL', 'WEAPON_APPISTOL', 'WEAPON_COMBATPISTOL'}
     for CurrentWeapon in ipairs(Weapons) do
-        if GetHashKey(CurrentWeapon) == Weapon then return true end
+        if joaat(CurrentWeapon) == Weapon then return true end
     end
     return false
 end
@@ -94,7 +94,7 @@ end
 function IsSub(Weapon)
     local Weapons = {'WEAPON_MICROSMG', 'WEAPON_SMG'}
     for CurrentWeapon in ipairs(Weapons) do
-        if GetHashKey(CurrentWeapon) == Weapon then return true end
+        if joaat(CurrentWeapon) == Weapon then return true end
     end
     return false
 end
@@ -102,7 +102,7 @@ end
 function IsRifle(Weapon)
     local Weapons = {'WEAPON_CARBINERIFLE', 'WEAPON_MUSKET', 'WEAPON_ADVANCEDRIFLE', 'WEAPON_ASSAULTRIFLE', 'WEAPON_SPECIALCARBINE', 'WEAPON_COMPACTRIFLE', 'WEAPON_BULLPUPRIFLE'}
     for CurrentWeapon in ipairs(Weapons) do
-        if GetHashKey(CurrentWeapon) == Weapon then return true end
+        if joaat(CurrentWeapon) == Weapon then return true end
     end
     return false
 end
@@ -110,7 +110,7 @@ end
 function IsLight(Weapon)
     local Weapons = {'WEAPON_MG', 'WEAPON_COMBATMG'}
     for CurrentWeapon in ipairs(Weapons) do
-        if GetHashKey(CurrentWeapon) == Weapon then return true end
+        if joaat(CurrentWeapon) == Weapon then return true end
     end
     return false
 end
@@ -118,7 +118,7 @@ end
 function IsShotgun(Weapon)
     local Weapons = {'WEAPON_BULLPUPSHOTGUN', 'WEAPON_ASSAULTSHOTGUN', 'WEAPON_DBSHOTGUN', 'WEAPON_PUMPSHOTGUN', 'WEAPON_HEAVYSHOTGUN', 'WEAPON_SAWNOFFSHOTGUN'}
     for CurrentWeapon in ipairs(Weapons) do
-        if GetHashKey(CurrentWeapon) == Weapon then return true end
+        if joaat(CurrentWeapon) == Weapon then return true end
     end
     return false
 end
@@ -126,7 +126,7 @@ end
 function IsSniper(Weapon)
     local Weapons = {'WEAPON_MARKSMANRIFLE', 'WEAPON_SNIPERRIFLE', 'WEAPON_HEAVYSNIPER', 'WEAPON_ASSAULTSNIPER', 'WEAPON_REMOTESNIPER'}
     for CurrentWeapon in ipairs(Weapons) do
-        if GetHashKey(CurrentWeapon) == Weapon then return true end
+        if joaat(CurrentWeapon) == Weapon then return true end
     end
     return false
 end
@@ -134,7 +134,7 @@ end
 function IsHeavy(Weapon)
     local Weapons = {'WEAPON_GRENADELAUNCHER', 'WEAPON_RPG', 'WEAPON_FLAREGUN', 'WEAPON_HOMINGLAUNCHER', 'WEAPON_FIREWORK', 'VEHICLE_WEAPON_TANK'}
     for CurrentWeapon in ipairs(Weapons) do
-        if GetHashKey(CurrentWeapon) == Weapon then return true end
+        if joaat(CurrentWeapon) == Weapon then return true end
     end
     return false
 end
@@ -142,7 +142,7 @@ end
 function IsMinigun(Weapon)
     local Weapons = {'WEAPON_MINIGUN'}
     for CurrentWeapon in ipairs(Weapons) do
-        if GetHashKey(CurrentWeapon) == Weapon then return true end
+        if joaat(CurrentWeapon) == Weapon then return true end
     end
     return false
 end
@@ -150,7 +150,7 @@ end
 function IsBomb(Weapon)
     local Weapons = {'WEAPON_GRENADE', 'WEAPON_PROXMINE', 'WEAPON_EXPLOSION', 'WEAPON_STICKYBOMB'}
     for CurrentWeapon in ipairs(Weapons) do
-        if GetHashKey(CurrentWeapon) == Weapon then return true end
+        if joaat(CurrentWeapon) == Weapon then return true end
     end
     return false
 end
@@ -158,7 +158,7 @@ end
 function IsVeh(Weapon)
     local Weapons = {'VEHICLE_WEAPON_ROTORS'}
     for CurrentWeapon in ipairs(Weapons) do
-        if GetHashKey(CurrentWeapon) == Weapon then return true end
+        if joaat(CurrentWeapon) == Weapon then return true end
     end
     return false
 end
@@ -166,7 +166,7 @@ end
 function IsVK(Weapon)
     local Weapons = {'WEAPON_RUN_OVER_BY_CAR', 'WEAPON_RAMMED_BY_CAR'}
     for CurrentWeapon in ipairs(Weapons) do
-        if GetHashKey(CurrentWeapon) == Weapon then return true end
+        if joaat(CurrentWeapon) == Weapon then return true end
     end
     return false
 end
