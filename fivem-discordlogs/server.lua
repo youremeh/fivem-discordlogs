@@ -20,14 +20,12 @@ end)
 RegisterServerEvent('bot:SendToDiscord')
 AddEventHandler('bot:SendToDiscord', function(Name, Message)
     if Message == nil or Message == '' then return nil end
-    WebHook = 'DISCORD WEBHOOK HERE'
-    PerformHttpRequest(WebHook, function(Content) end, 'POST', json.encode({username = Name, content = '```\n'..Message..'```'}), {['Content-Type'] = 'application/json'})
+    PerformHttpRequest('webhook link here', function() end, 'POST', json.encode({username = Name, content = '```\n'..Message..'```'}), {['Content-Type'] = 'application/json'})
 end)
 
 --	TriggerEvent('bot:SendToDiscordStaff', 'TITLE', 'MESSAGE')
 RegisterServerEvent('bot:SendToDiscordStaff')
 AddEventHandler('bot:SendToDiscordStaff', function(Name, Message)
     if Message == nil or Message == '' then return nil end
-    WebHook = 'DISCORD WEBHOOK HERE'
-    PerformHttpRequest(WebHook, function(Content) end, 'POST', json.encode({username = Name, content = '```\n'..Message..'```'}), {['Content-Type'] = 'application/json'})
+    PerformHttpRequest('webhook link here', function() end, 'POST', json.encode({username = Name, content = '```\n'..Message..'```'}), {['Content-Type'] = 'application/json'})
 end)
